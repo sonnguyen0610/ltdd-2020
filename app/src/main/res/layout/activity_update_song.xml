@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AddBaiHatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarUpdateBaiHat"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:background="#42A7FA"
+        android:gravity="center"
+        android:textColor="#FC1403"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Cập nhật thông tin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:id="@+id/edtChangeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên bài hát"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtChangeAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên ca sĩ"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtChangeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hình ảnh"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/insert_row"
+            android:background="@drawable/custom_create"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sửa bài hát" />
+
+        <Button
+            android:id="@+id/btnUpdateCancel"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/remove"
+            android:background="@drawable/custom_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ" />
+    </LinearLayout>
+
+</LinearLayout>

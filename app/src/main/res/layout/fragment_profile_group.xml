@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@drawable/back"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+                    <ImageView
+                        android:id="@+id/imgMain"
+                        android:src="@drawable/icon_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/txtMain"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="INFORMATION GROUP"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="215dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgDien"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/girl"
+                                    android:layout_centerInParent="true"
+                                    android:padding="10dp"
+                                    >
+                                </ImageView>
+
+                                <TextView
+                                    android:textColor="#FA1100"
+                                    android:textSize="16sp"
+                                    android:gravity="center"
+                                    android:id="@+id/txtDien"
+                                    android:layout_marginTop="42dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgDien"
+                                    android:text="Nguyễn Thị Hoàng Oanh" />
+                                <TextView
+                                    android:textColor="#D13831"
+                                    android:gravity="center"
+                                    android:id="@+id/txtPosition1"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_below="@id/txtDien"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Leader)" />
+                                <Button
+                                    android:id="@+id/btnDien"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </Button>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgPhong"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/girl"
+                                    android:layout_centerInParent="true"
+                                    android:padding="10dp"
+                                    >
+                                </ImageView>
+
+                                <TextView
+                                    android:textColor="#FA1100"
+                                    android:textSize="16sp"
+                                    android:gravity="center"
+                                    android:id="@+id/txtPhong"
+                                    android:layout_marginTop="42dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgPhong"
+                                    android:text="Nguyễn Thị Hải Sơn" />
+                                <TextView
+                                    android:textColor="#D13831"
+                                    android:gravity="center"
+                                    android:id="@+id/txtPosition2"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_below="@id/txtPhong"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Leader)" />
+                                <Button
+                                    android:id="@+id/btnPhong"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </Button>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgTuyen"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/girl"
+                                    android:layout_centerInParent="true"
+                                    android:padding="10dp"
+                                    >
+                                </ImageView>
+
+                                <TextView
+                                    android:textColor="#FA1100"
+                                    android:textSize="16sp"
+                                    android:gravity="center"
+                                    android:id="@+id/txtTuyen"
+                                    android:layout_marginTop="42dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgTuyen"
+                                    android:text="Nguyễn Thị Thúy Hằng" />
+                                <TextView
+                                    android:textColor="#D13831"
+                                    android:gravity="center"
+                                    android:id="@+id/txtPosition3"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_below="@id/txtTuyen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Member)" />
+                                <Button
+                                    android:id="@+id/btnTuyen"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </Button>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:id="@+id/imgXuan"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/profile"
+                                    android:layout_centerInParent="true"
+                                    android:padding="10dp"
+                                    >
+                                </ImageView>
+
+                                <TextView
+                                    android:textColor="#FA1100"
+                                    android:textSize="16sp"
+                                    android:gravity="center"
+                                    android:id="@+id/txtXuan"
+                                    android:layout_marginTop="42dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/imgXuan"
+                                    android:text="Lưu Duy Thanh" />
+                                <TextView
+                                    android:textColor="#D13831"
+                                    android:gravity="center"
+                                    android:id="@+id/txtPosition4"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_below="@id/txtXuan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Member)" />
+                                <Button
+                                    android:id="@+id/btnXuan"
+                                    android:background="@android:color/transparent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </Button>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/custom_bg_play_nhac">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbPlayNhac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <!-- ViewPager để chuyển, vuốt qua lại giữa các màn hình(Fragment)-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpNhac"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"></androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTimeSong"
+                android:layout_marginLeft="7dp"
+                android:textSize="20sp"
+                android:layout_weight="0.5"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <SeekBar
+                android:id="@+id/seekBarSong"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </SeekBar>
+
+            <TextView
+                android:id="@+id/txtTimeTotal"
+                android:textSize="20sp"
+                android:text="00:00"
+                android:layout_weight="0.5"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/imgButtonSuff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgButtonShuff"
+                android:scaleType="fitXY"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/iconsuffle1">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imgButtonPre"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_marginRight="25dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/iconpreview1">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imgButtonPlay"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/iconplay1">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imgButtonNext"
+                android:scaleType="fitXY"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/iconnext1">
+
+            </ImageButton>
+            <ImageButton
+                android:id="@+id/imgButtonRepeat"
+                android:scaleType="fitXY"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_repeat_one_white">
+
+            </ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="-5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imgButtonLove"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/iconloved">
+
+            </ImageButton>
+            <TextView
+                android:layout_marginLeft="150dp"
+                android:textColor="#FDFDFC"
+                android:textSize="13sp"
+                android:text="NOW PLAYING LIST"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageButton
+                android:id="@+id/imgButtonList"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/iconloved"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

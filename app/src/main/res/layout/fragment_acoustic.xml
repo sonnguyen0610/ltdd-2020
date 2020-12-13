@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relatAcoustic"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtAcoustic"
+            android:text="NHẸ NHÀNG CÙNG ACOUSTIC"
+            android:textSize="20sp"
+            android:textColor="#090909"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/relatAcoustic"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rvAcoustic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Bên dưới đổ data vào RecyleView-->
+    <Button
+        android:id="@+id/btnAcousticViewMore"
+        android:layout_below="@id/rvAcoustic"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/iconmoreplaylist"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:textColor="#FFFCFC"
+        android:text="Xem thêm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>

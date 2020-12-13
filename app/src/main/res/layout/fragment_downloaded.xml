@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="#FF0033"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="DANH SÁCH NHẠC OFFLINE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <Button
+        android:id="@+id/btnPlayNhacOffline"
+        android:layout_gravity="center"
+        android:text="Play ngẫu nhiên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+    <ListView
+        android:id="@+id/lvNhacOffline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

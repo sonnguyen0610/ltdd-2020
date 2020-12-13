@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgBackgroundPlayList"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+    </ImageView>
+
+    <!-- Dùng để pha mau, trộn màu cho đẹp @@-->
+    <View
+        android:background="@drawable/custom_background_banner"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp">
+
+    </View>
+    <!--elevation : tạo bóng đổ
+    scaleType: fittXY: đưa hình ảnh vào nó sẽ giãn đều ra-->
+    <ImageView
+        android:id="@+id/imgPlayList"
+        android:layout_alignBottom="@id/imgBackgroundPlayList"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="6dp"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </ImageView>
+    <!-- ellipsize="end: chữ quá dài sẽ hiện dấu 3 chấm và nằm ở bên phải(end)-->
+    <TextView
+        android:id="@+id/txtNamePlayList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgPlayList"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toRightOf="@id/imgPlayList"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Những Tình Khúc Da Diết"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/icon_music"
+        android:scaleType="fitXY"
+        android:background="@drawable/icon_music"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+</RelativeLayout>

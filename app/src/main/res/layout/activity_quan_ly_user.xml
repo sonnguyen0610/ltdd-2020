@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.QuanLyUserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarQuanLyUser"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#FA0000"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:text="DANH SÁCH NGƯỜI DÙNG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <ListView
+        android:id="@+id/lvQuanLyUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add_user" />
+
+
+
+</LinearLayout>

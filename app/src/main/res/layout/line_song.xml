@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSong"
+        app:cardCornerRadius="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/imgSong"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/txtNameSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_toRightOf="@id/cardViewSong"
+        android:textColor="#F80707"
+        android:textSize="17.5sp"></TextView>
+
+    <TextView
+        android:id="@+id/txtAuthorSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/cardViewSong"
+        android:singleLine="true"
+        android:text="Author"
+        android:textColor="#685F5F"
+        android:textSize="16sp"></TextView>
+
+    <ImageView
+        android:id="@+id/imgLuotThich"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/imgDownload"
+        android:src="@drawable/iconlove">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imgDownload"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/ic_downloaded">
+
+    </ImageView>
+
+</RelativeLayout>

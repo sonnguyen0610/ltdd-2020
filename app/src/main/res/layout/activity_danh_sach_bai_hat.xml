@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".activity.DanhSachBaiHatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolBar"
+            android:scrollbarSize="10sp"
+            app:expandedTitleGravity="center|bottom"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleMarginBottom="33dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/viewBackGround"
+                android:background="@drawable/custom_background_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolBarDanhSach"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:elevation="6dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <ImageView
+                android:id="@+id/imgDanhSach"
+                android:scaleType="fitXY"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="50dp"
+                android:elevation="6dp"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+<!--
+            <TextView
+                android:id="@+id/txtTotalSong"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:fitsSystemWindows="true"
+                android:layout_marginTop="80dp"
+                android:text="Số lượng bài hát"
+                android:layout_gravity="center"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                app:expandedTitleGravity="center|bottom"
+                app:expandedTitleMarginBottom="33dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            </TextView>
+          -->
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:backgroundTint="#620477"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconfloatingactionbutton"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:layout_anchor="@id/appBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestScrollView"
+        android:layout_marginTop="30dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDanhSachBaiHat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

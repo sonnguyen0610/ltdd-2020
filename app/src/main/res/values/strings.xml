@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MP3 Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Menu Item -->
+    <string name="menu_item_home">Home</string>
+    <string name="menu_item_profile">Profile Group</string>
+    <string name="menu_item_playlist">Playlists</string>
+    <string name="menu_item_vote">Vote</string>
+    <string name="menu_item_send">Send</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="menu_item_downloaded">Downloaded songs</string>
+    <string name="menu_item_communication">COMUNICATION</string>
+    <string name="menu_downloaded">DOWNLOADED</string>
+
+
+    <!-- Main Screen -->
+    <string name="mainscreen_add_catergory">Add Category</string>
+    <string name="mainscreen_add_note">Add Note</string>
+    <string name="mainscreen_edit_note">Edit Note</string>
+    <string name="mainscreen_empty_note">Your note list is empty, let start to create your first note now</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+
+    <!-- Note detail screen -->
+    <string name="note_detail_share">Share</string>
+    <string name="note_detail_delete">Delete</string>
+    <string name="note_detail_category">Category</string>
+    <string name="note_detail_note_detail">Detail</string>
+    <string name="note_detail_other_information">Other Information</string>
+    <string name="note_detail_map_location">Map Location</string>
+    <string name="note_detail_note_name_hint">Name</string>
+    <string name="note_detail_note_detail_hint">Description</string>
+    <string name="note_detail_add_note_hint">Your Note (Can Add Later)</string>
+    <string name="note_detail_address_hint">Address</string>
+
+    <!-- Bottom-->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_leaderboard">Leaderboard</string>
+    <string name="menu_store">Store</string>
+    <string name="menu_profile">Profile</string>
+</resources>

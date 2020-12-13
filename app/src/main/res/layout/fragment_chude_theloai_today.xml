@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/reChuDeTheLoai"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTitleChuDeTheLoai"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="CHỦ ĐỀ VÀ THỂ LOẠI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txtViewMoreChuDeTheLoai"
+            android:textSize="18sp"
+            android:textColor="#F70202"
+            android:layout_alignParentRight="true"
+            android:text="Xem Thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </RelativeLayout>
+
+
+    <!-- Cho phép cuộn theo chiều ngang-->
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scollview"
+        android:scrollbars="none"
+        android:layout_below="@id/reChuDeTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

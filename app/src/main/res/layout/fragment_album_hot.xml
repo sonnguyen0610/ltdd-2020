@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relatAlbum"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtAlbum"
+            android:text="ALBUM HOT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#090909"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtAlbumViewMore"
+            android:textSize="18sp"
+            android:textColor="#F70202"
+            android:layout_alignParentRight="true"
+            android:text="Xem Thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/relatAlbum"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/rvAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Bên dưới đỏi data vào RecyleView-->
+
+</RelativeLayout>
